@@ -105,6 +105,15 @@ footer {
     width:95%;
 }
 
+/* 
+    ! remember to delete the styles below this line 
+
+*/
+
+.contact_page {
+    display:none;
+}
+
 
 
 
