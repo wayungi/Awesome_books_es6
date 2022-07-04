@@ -19,6 +19,13 @@ addNewLink.addEventListener('click', () => {
   return null;
 });
 
+listLink.addEventListener('click', () => {
+  listLink.classList.add('active');
+  contactLink.classList.remove('active');
+  addNewLink.classList.remove('active');
+  return null;
+});
+
 
 
 
