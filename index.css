@@ -10,6 +10,8 @@ html, body, div, h1, h2, p, article, header, nav, section, ul, li {
     display:flex;
     flex-direction: column;
     flex-wrap:nowrap;
+    height: 100vh;
+    position:relative;
 
     /* 
         ? is it justify content / align items
@@ -17,13 +19,16 @@ html, body, div, h1, h2, p, article, header, nav, section, ul, li {
     */
 }
 
-.nav_bar{
+footer, .nav_bar {
     border:2px solid black;
     margin:10px;
     padding:5px 15px;
     display:flex;
     flex-direction:row;
     flex-wrap: nowrap;
+}
+
+.nav_bar{
     justify-content: space-between;
 }
 
@@ -61,4 +66,24 @@ nav li a {
 nav ul li a.active{
     color:blue;
 }
+
+
+
+footer {
+    position:absolute;
+    bottom: 0px;
+    /* 
+    TODO: fix the length of the footer on page resize
+    */
+    width:95%;
+}
+
+
+
+
+
+
+
+
+
 
