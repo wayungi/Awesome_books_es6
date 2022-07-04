@@ -24,6 +24,5 @@ const uiAddBooks = (book) => {
 
   bookDiv.appendChild(title);
   bookDiv.appendChild(author);
-
   return bookDiv;
 };
