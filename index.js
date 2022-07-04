@@ -1,6 +1,5 @@
 import {
   addBook,
-  deleteBook,
   getBookCount,
   getBooks,
 } from './modules/books.js';
@@ -60,10 +59,6 @@ form.addEventListener('submit', () => {
     const book = Book(title, author);
     addBook(book);
     listBooksPage.appendChild(uiAddBook(book));
-
-    /*
-      TODO: Add interface update method here
-    */
     document.getElementById('title').value = '';
     document.getElementById('author').value = '';
     return book;
@@ -72,8 +67,6 @@ form.addEventListener('submit', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('page reloaded');
-  console.log(getBookCount());
   if (getBookCount()) {
     getBooks().forEach((book) => {
       listBooksPage.appendChild(uiAddBook(book));

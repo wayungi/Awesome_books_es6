@@ -1,3 +1,5 @@
+import { deleteBook } from './books.js';
+
 const createBtn = (isbn) => {
   const btn = document.createElement('button');
   btn.textContent = 'Remove';
@@ -6,6 +8,7 @@ const createBtn = (isbn) => {
 
   btn.addEventListener('click', (e) => {
     e.target.parentElement.remove();
+    deleteBook(isbn);
   });
   return btn;
 };
