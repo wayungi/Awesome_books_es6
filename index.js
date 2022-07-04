@@ -16,13 +16,21 @@ contactLink.addEventListener('click', () => {
   addNewLink.classList.remove('active');
   contactLink.classList.add('active');
 
+  listBooksPage.classList.add('hide');
+  contactPage.classList.remove('hide');
+  addNewBookPage.classList.add('hide');
+
   return null;
-})
+});
 
 addNewLink.addEventListener('click', () => {
   listLink.classList.remove('active');
   contactLink.classList.remove('active');
   addNewLink.classList.add('active');
+
+  listBooksPage.classList.add('hide');
+  contactPage.classList.add('hide');
+  addNewBookPage.classList.remove('hide');
 
   return null;
 });
@@ -31,6 +39,10 @@ listLink.addEventListener('click', () => {
   listLink.classList.add('active');
   contactLink.classList.remove('active');
   addNewLink.classList.remove('active');
+
+  listBooksPage.classList.remove('hide');
+  contactPage.classList.add('hide');
+  addNewBookPage.classList.hide('hide');
   return null;
 });
 
