@@ -67,6 +67,33 @@ nav ul li a.active{
     color:blue;
 }
 
+.page {
+    display:flex;
+    flex-direction: column;
+}
+
+
+.contact_page {
+    margin: 5% 15%;
+}
+
+.page_title {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom:5%;
+    font-size:3em;
+}
+
+.contact_details {
+     margin-top:4%;
+     padding-left:4%;
+}
+
+.contact_details li {
+    line-height: 1.5em;
+}
+
 
 
 footer {
