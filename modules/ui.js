@@ -1,48 +1,29 @@
-const displayAddNew = (valuesObj) => {
-  const {
-    addNew,
-    list,
-    contact,
-    addNewBookPage,
-    contactPage,
-    listBooksPage,
-  } = valuesObj;
+const createBtn = (isbn) => {
+  const btn = document.createElement('button');
+  btn.value = 'Remove';
+  btn.setAttribute('id', isbn);
 
-  // pages
-  listBooksPage.classList.add('hide');
-  contactPage.classList.add('hide');
-  addNewBookPage.classList.remove('hide');
-
-  // links
-  contact.classList.remove('active');
-  list.classList.remove('active');
-  addNew.classList.add('active');
-  return null;
+  btn.addEventListener('click', (e) => {
+    console.log(e.target.parent);
+    e.target.parent.remove();
+  });
+  return btn;
 };
 
-const displayList = (valuesObj) => {
-  const {
-    list,
-    addNew,
-    contact,
-    listBooksPage,
-    contactPage,
-    addNewBookPage,
-  } = valuesObj;
+const uiAddBooks = (book) => {
+  const bookDiv = document.createElement('div');
 
-  // pages
-  addNewBookPage.classList.add('hide');
-  contactPage.classList.add('hide');
-  listBooksPage.classList.remove('hide');
+  const title = document.createElement('p');
+  title.textContent = book.title;
 
-  // links
-  list.classList.remove('active');
-  contact.classList.remove('active');
-  addNew.classList.add('active');
-  return null;
-};
+  const author = document.createElement('p');
+  author.textContent = book.author;
 
-export {
-  displayAddNew,
-  displayList,
+  const delBtn = createBtn(book.isbn);
+  bookDiv.appendChild(delBtn);
+
+  bookDiv.appendChild(title);
+  bookDiv.appendChild(author);
+
+  return bookDiv;
 };

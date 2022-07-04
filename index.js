@@ -46,12 +46,6 @@ listLink.addEventListener('click', () => {
   return null;
 });
 
-
-
-
-
-
-
 form.addEventListener('submit', () => {
   const title = document.getElementById('title').value;
   const author = document.getElementById('author').value;
