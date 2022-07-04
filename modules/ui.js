@@ -1,22 +1,23 @@
-const toggleViews = (valuesObj) => {
+const displayAddNew = (valuesObj) => {
   const {
-    ClickedLink,
-    linkHolder1,
-    linkHolder2,
-    activePage,
-    pageHolder1,
-    pageHolder2,
+    addNew,
+    list,
+    contact,
+    addNewBookPage,
+    contactPage,
+    listBooksPage,
   } = valuesObj;
-  ClickedLink.addEventListener('click', () => {
+
+  addNew.addEventListener('click', () => {
     // pages
-    pageHolder1.classList.add('hide');
-    pageHolder2.classList.add('hide');
-    activePage.classList.remove('hide');
+    listBooksPage.classList.add('hide');
+    contactPage.classList.add('hide');
+    addNewBookPage.classList.remove('hide');
 
     // links
-    linkHolder1.classList.remove('active');
-    linkHolder2.classList.remove('active');
-    ClickedLink.classList.add('active');
+    contact.classList.remove('active');
+    list.classList.remove('active');
+    addNew.classList.add('active');
     return null;
   });
 };
