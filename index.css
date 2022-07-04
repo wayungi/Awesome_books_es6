@@ -19,6 +19,18 @@ html, body, div, h1, h2, p, article, header, nav, section, ul, li {
     */
 }
 
+.list_books_page {
+    /* border:1px solid black; */
+    height:70%;
+    width:80%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+
 footer, .nav_bar {
     border:2px solid black;
     margin:10px;
