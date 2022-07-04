@@ -1,0 +1,25 @@
+{
+  "name": "awesome_books_es6_2",
+  "version": "1.0.0",
+  "description": "CRUD application for a book store",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wayungi/Awesome_books_es6_2.git"
+  },
+  "keywords": [
+    "bookstore",
+    "library",
+    "'book",
+    "project'"
+  ],
+  "author": "Francis Wayungi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wayungi/Awesome_books_es6_2/issues"
+  },
+  "homepage": "https://github.com/wayungi/Awesome_books_es6_2#readme"
+}
