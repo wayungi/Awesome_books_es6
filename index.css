@@ -12,11 +12,6 @@ html, body, div, h1, h2, p, article, header, nav, section, ul, li {
     flex-wrap:nowrap;
     height: 100vh;
     position:relative;
-
-    /* 
-        ? is it justify content / align items
-        TODO: come back and fix this
-    */
 }
 
 .list_books_page {
@@ -24,15 +19,33 @@ html, body, div, h1, h2, p, article, header, nav, section, ul, li {
     height:70%;
     width:80%;
     margin: 0 auto;
-    overflow-y: scroll;
     margin-top:4%;
+    overflow-y: scroll;
 }
 
 .book_item {
     display:flex;
+    flex-direction: row;
     height:40px;
-    justify-content: space-between ;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
+
+/* 
+.book-list {
+  border: 3px solid black;
+  margin-bottom: 10px;
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+.book-list div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 2px 5px;
+} */
 
 .book_item:nth-child(odd) {
     background-color: rgba(192,192,192, 0.5);
