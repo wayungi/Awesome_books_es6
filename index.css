@@ -72,11 +72,6 @@ nav ul li a.active{
     flex-direction: column;
 }
 
-
-.contact_page {
-    margin: 5% 15%;
-}
-
 .page_title {
     display:flex;
     flex-direction: row;
@@ -84,6 +79,37 @@ nav ul li a.active{
     margin-bottom:5%;
     font-size:3em;
 }
+
+#add_new_book {
+    align-items: center;
+}
+
+form {
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction: column;
+    width:50%;
+}
+
+form input {
+    all:unset;
+    margin: 2% 0;
+}
+
+form input[type='text'] {
+    height: 40px;
+    font-size:1.4em;
+    box-sizing: border-box;
+    padding: 2px 10px;
+    border:2px solid black;
+}
+
+
+.contact_page {
+    margin: 5% 15%;
+}
+
+
 
 .contact_details {
      margin-top:4%;
@@ -93,8 +119,6 @@ nav ul li a.active{
 .contact_details li {
     line-height: 1.5em;
 }
-
-
 
 footer {
     position:absolute;
