@@ -1,3 +1,4 @@
+import { DateTime } from './modules/luxon.js';
 import {
   addBook,
   getBookCount,
@@ -5,9 +6,9 @@ import {
 } from './modules/books.js';
 import Book from './modules/book.js';
 import { uiAddBook } from './modules/ui.js';
-import { DateTime } from "luxon";
 
 const form = document.getElementById('add_book_form');
+const timeBar = document.getElementById('time_bar');
 
 const listLink = document.getElementById('list_id');
 const addNewLink = document.getElementById('add_new_id');
@@ -16,6 +17,15 @@ const contactLink = document.getElementById('contact_id');
 const addNewBookPage = document.getElementById('add_new_book');
 const contactPage = document.getElementById('contact_us');
 const listBooksPage = document.getElementById('list_books');
+
+// timeBar.textContent = setInterval(() => {
+//   DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+// }, 1000);
+
+setTimeout(() => {
+  const dt = DateTime.now();
+  timeBar.textContent = dt.toLocaleString(DateTime.DATETIME_MED);
+}, 1000);
 
 contactLink.addEventListener('click', () => {
   listLink.classList.remove('active');

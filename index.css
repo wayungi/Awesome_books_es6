@@ -123,6 +123,13 @@ nav ul li a.active{
     color:blue;
 }
 
+#time_bar{
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  padding-right:20px;
+}
+
 .page {
     display:flex;
     flex-direction: column;
