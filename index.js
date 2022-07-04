@@ -11,6 +11,14 @@ const addNewBookPage = document.getElementById('add_new_book');
 const contactPage = document.getElementById('contact_us');
 const listBooksPage = document.getElementById('list_books');
 
+contactLink.addEventListener('click', () => {
+  listLink.classList.remove('active');
+  addNewLink.classList.remove('active');
+  contactLink.classList.add('active');
+
+  return null;
+})
+
 addNewLink.addEventListener('click', () => {
   listLink.classList.remove('active');
   contactLink.classList.remove('active');
@@ -25,6 +33,8 @@ listLink.addEventListener('click', () => {
   addNewLink.classList.remove('active');
   return null;
 });
+
+
 
 
 
