@@ -1,21 +1,3 @@
-// [
-//   {
-//     title: 'Java 4',
-//     author: 'Agaba',
-//     isbn: '65476473',
-//   },
-//   {
-//     title: 'Python 4',
-//     author: 'Bruce W',
-//     isbn: '990880988',
-//   },
-//   {
-//     title: 'JavaScript',
-//     author: 'Francis',
-//     isbn: '3453553565',
-//   },
-// ];
-
 const getBooks = () => {
   if (localStorage.getItem('books')) {
     const books = JSON.parse(localStorage.getItem('books'));
