@@ -1,7 +1,8 @@
 const createBtn = (isbn) => {
   const btn = document.createElement('button');
-  btn.value = 'Remove';
+  btn.textContent = 'Remove';
   btn.setAttribute('id', isbn);
+  btn.classList.add('delete_btn');
 
   btn.addEventListener('click', (e) => {
     console.log(e.target.parent);
