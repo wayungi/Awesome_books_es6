@@ -29,6 +29,10 @@ let books = getBooks();
 const addBook = (book) => {
   books.push(book);
   localStorage.setItem('books', JSON.stringify(books));
+  /*
+    ! Delete after work
+  */
+  console.log(books);
   return book;
 };
 
