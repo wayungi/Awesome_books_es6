@@ -35,12 +35,12 @@ h1 {
 
 }
 
-ul {
+nav ul {
     display:flex;
     flex-direction:row;
 }
 
-ul li {
+nav ul li {
     list-style: none;
     padding:2px 10px;
     display:flex;
@@ -48,17 +48,17 @@ ul li {
     align-items: center;
 }
 
-ul li:nth-child(2){
+nav ul li:nth-child(2){
     border-left:1px solid black;
     border-right:1px solid black;
 }
 
-li a {
+nav li a {
     text-decoration: none;
     color:black;
 }
 
-ul li a.active{
+nav ul li a.active{
     color:blue;
 }
 
