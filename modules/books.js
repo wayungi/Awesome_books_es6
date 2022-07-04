@@ -18,13 +18,17 @@ let books = [
 
 const addBook = (book) => {
   books.push(book);
+  localStorage.setItem('books', books);
   return book;
 };
 
 const deleteBook = (isbn) => {
   books = books.filter((book) => book.isbn !== isbn);
+  localStorage.setItem('books', books);
   return books;
 };
+
+
   /*
     * test code
   */
