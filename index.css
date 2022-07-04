@@ -52,3 +52,13 @@ ul li:nth-child(2){
     border-left:1px solid black;
     border-right:1px solid black;
 }
+
+li a {
+    text-decoration: none;
+    color:black;
+}
+
+ul li a.active{
+    color:blue;
+}
+
