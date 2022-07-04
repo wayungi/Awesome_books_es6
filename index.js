@@ -4,8 +4,8 @@ import Book from './modules/book.js';
 const form = document.getElementById('add_book_form');
 
 form.addEventListener('submit', () => {
-  let title = document.getElementById('title').value;
-  let author = document.getElementById('author').value;
+  const title = document.getElementById('title').value;
+  const author = document.getElementById('author').value;
 
   if (title && author) {
     const book = Book(title, author);
@@ -18,4 +18,6 @@ form.addEventListener('submit', () => {
     document.getElementById('author').value = '';
     return book;
   }
+
+  return null;
 });
