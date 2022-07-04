@@ -3,13 +3,25 @@ import Book from './modules/book.js';
 
 const form = document.getElementById('add_book_form');
 
-const list = document.getElementById('list_id');
-const addNew = document.getElementById('add_new_id');
-const contact = document.getElementById('contact_id');
+const listLink = document.getElementById('list_id');
+const addNewLink = document.getElementById('add_new_id');
+const contactLink = document.getElementById('contact_id');
 
 const addNewBookPage = document.getElementById('add_new_book');
 const contactPage = document.getElementById('contact_us');
 const listBooksPage = document.getElementById('list_books');
+
+addNewLink.addEventListener('click', () => {
+  listLink.classList.remove('active');
+  contactLink.classList.remove('active');
+  addNewLink.classList.add('active');
+
+  return null;
+});
+
+
+
+
 
 form.addEventListener('submit', () => {
   const title = document.getElementById('title').value;
