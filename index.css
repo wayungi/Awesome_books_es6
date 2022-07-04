@@ -104,6 +104,17 @@ form input[type='text'] {
     border:2px solid black;
 }
 
+form input[type='submit'] {
+    border:2px solid black;
+    width:15%;
+    height:35px;
+    text-align: center;
+    align-self: flex-end;
+}
+
+form input[type='submit']:hover {
+    cursor: pointer;
+}
 
 .contact_page {
     margin: 5% 15%;
