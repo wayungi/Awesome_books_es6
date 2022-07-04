@@ -24,8 +24,11 @@ const deleteBook = (isbn) => {
   return books;
 };
 
+const getBookCount = () => books.length;
+
 export {
   addBook,
   deleteBook,
   getBooks,
+  getBookCount,
 };

@@ -1,5 +1,11 @@
-import { addBook, deleteBook, getBooks } from './modules/books.js';
+import {
+  addBook,
+  deleteBook,
+  getBookCount,
+  getBooks,
+} from './modules/books.js';
 import Book from './modules/book.js';
+import { uiAddBooks } from './modules/ui.js';
 
 const form = document.getElementById('add_book_form');
 
@@ -42,7 +48,7 @@ listLink.addEventListener('click', () => {
 
   listBooksPage.classList.remove('hide');
   contactPage.classList.add('hide');
-  addNewBookPage.classList.hide('hide');
+  addNewBookPage.classList.add('hide');
   return null;
 });
 
@@ -61,6 +67,16 @@ form.addEventListener('submit', () => {
     document.getElementById('author').value = '';
     return book;
   }
+  return null;
+});
 
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('page reloaded');
+  console.log(getBookCount());
+  if (getBookCount()) {
+    getBooks().forEach((book) => {
+      listBooksPage.appendChild(uiAddBooks(book));
+    });
+  }
   return null;
 });
