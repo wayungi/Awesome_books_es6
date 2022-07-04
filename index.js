@@ -5,7 +5,7 @@ import {
   getBooks,
 } from './modules/books.js';
 import Book from './modules/book.js';
-import { uiAddBooks } from './modules/ui.js';
+import { uiAddBook } from './modules/ui.js';
 
 const form = document.getElementById('add_book_form');
 
@@ -59,6 +59,7 @@ form.addEventListener('submit', () => {
   if (title && author) {
     const book = Book(title, author);
     addBook(book);
+    listBooksPage.appendChild(uiAddBook(book));
 
     /*
       TODO: Add interface update method here
@@ -75,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log(getBookCount());
   if (getBookCount()) {
     getBooks().forEach((book) => {
-      listBooksPage.appendChild(uiAddBooks(book));
+      listBooksPage.appendChild(uiAddBook(book));
     });
   }
   return null;

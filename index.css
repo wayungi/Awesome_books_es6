@@ -24,15 +24,11 @@ html, body, div, h1, h2, p, article, header, nav, section, ul, li {
     height:70%;
     width:80%;
     margin: 0 auto;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
     overflow-y: scroll;
     margin-top:4%;
 }
 
 .book_item {
-    /* border:1px solid black; */
     display:flex;
     height:40px;
     justify-content: space-between ;

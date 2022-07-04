@@ -5,13 +5,12 @@ const createBtn = (isbn) => {
   btn.classList.add('delete_btn');
 
   btn.addEventListener('click', (e) => {
-    console.log(e.target.parent);
-    e.target.parent.remove();
+    e.target.parentElement.remove();
   });
   return btn;
 };
 
-const uiAddBooks = (book) => {
+const uiAddBook = (book) => {
   const bookDiv = document.createElement('div');
   bookDiv.classList.add('book_item');
 
@@ -39,5 +38,5 @@ const uiAddBooks = (book) => {
 };
 
 export {
-  uiAddBooks,
+  uiAddBook,
 };
