@@ -12,18 +12,28 @@ const createBtn = (isbn) => {
 
 const uiAddBooks = (book) => {
   const bookDiv = document.createElement('div');
+  bookDiv.classList.add('book_item');
 
   const title = document.createElement('p');
-  title.textContent = book.title;
+  title.textContent = `"${book.title}"`;
 
   const author = document.createElement('p');
   author.textContent = book.author;
 
-  const delBtn = createBtn(book.isbn);
-  bookDiv.appendChild(delBtn);
+  const by = document.createElement('p');
+  by.textContent = 'by';
 
-  bookDiv.appendChild(title);
-  bookDiv.appendChild(author);
+  const bookGroup = document.createElement('div');
+  bookGroup.classList.add('book_group');
+
+  bookGroup.appendChild(title);
+  bookGroup.appendChild(by);
+  bookGroup.appendChild(author);
+
+  const delBtn = createBtn(book.isbn);
+
+  bookDiv.appendChild(bookGroup);
+  bookDiv.appendChild(delBtn);
   return bookDiv;
 };
 

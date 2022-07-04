@@ -20,7 +20,7 @@ html, body, div, h1, h2, p, article, header, nav, section, ul, li {
 }
 
 .list_books_page {
-    /* border:1px solid black; */
+    border:3px solid black;
     height:70%;
     width:80%;
     margin: 0 auto;
@@ -28,6 +28,30 @@ html, body, div, h1, h2, p, article, header, nav, section, ul, li {
     flex-direction: row;
     justify-content: center;
     overflow-y: scroll;
+    margin-top:4%;
+}
+
+.book_item {
+    /* border:1px solid black; */
+    display:flex;
+    height:40px;
+    justify-content: space-between ;
+}
+
+.book_item:nth-child(odd) {
+    background-color: rgba(192,192,192, 0.5);
+}
+
+.book_item p {
+    /* border:1px solid black; */
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.book_group {
+    display:flex;
+    flex-direction: row;;
 }
 
 
