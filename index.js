@@ -18,11 +18,7 @@ const addNewBookPage = document.getElementById('add_new_book');
 const contactPage = document.getElementById('contact_us');
 const listBooksPage = document.getElementById('list_books');
 
-// timeBar.textContent = setInterval(() => {
-//   DateTime.now().toLocaleString(DateTime.DATETIME_MED);
-// }, 1000);
-
-setTimeout(() => {
+setInterval(() => {
   const dt = DateTime.now();
   timeBar.textContent = dt.toLocaleString(DateTime.DATETIME_MED);
 }, 1000);
