@@ -61,6 +61,8 @@ nav ul li:nth-child(2){
 nav li a {
     text-decoration: none;
     color:black;
+    border:1px solid green;
+    padding:8px 15px;
 }
 
 nav ul li a.active{
@@ -140,12 +142,9 @@ footer {
     width:95%;
 }
 
-/* 
-    ! remember to delete the styles below this line 
 
-*/
 
-.contact_page {
+.hide {
     display:none;
 }
 

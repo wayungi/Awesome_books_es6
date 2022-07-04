@@ -14,9 +14,9 @@
         <nav class="nav_bar">
             <h1>Awesome Books</h1>
             <ul class="nav_menu">
-                <li class="nav_item"><a href="#"  class="active">List</a></li>
-                <li class="nav_item"><a href="#">Add new</a></li>
-                <li class="nav_item"><a href="#">Contact</a></li>
+                <li class="nav_item"><a href="#"  id="list_id" class="active">List</a></li>
+                <li class="nav_item"><a href="#" id="add_new_id">Add new</a></li>
+                <li class="nav_item"><a href="#" id="contact_id">Contact</a></li>
             </ul>
         </nav>
 
@@ -33,7 +33,7 @@
         </div>
 
         <!-- Add book page -->
-        <div class="add_new_book_page page" id="add_new_book">
+        <div class="add_new_book_page page hide" id="add_new_book">
             <h2 class="page_title">Add a new book</h2>
             <form action="#" class="form" id="add_book_form">
                 <input type="text" id="title" placeholder="Book Title">
@@ -43,7 +43,7 @@
         </div>
 
         <!-- conact information div -->
-        <div class="contact_page page" id="contact_us">
+        <div class="contact_page page hide" id="contact_us">
             <h2 class="page_title">Contact information</h2>
             <p>Do you have any questions or you just want to say "Hello"?</p>
             <p>You can reach out to us</p>
