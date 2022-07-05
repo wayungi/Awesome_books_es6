@@ -30,6 +30,7 @@ const createBtn = (isbn) => {
 
   btn.addEventListener('click', (e) => {
     e.target.parentElement.remove();
+    deleteBook(isbn);
   });
   return btn;
 };
@@ -63,7 +64,6 @@ const uiAddBook = (book) => {
 
 export {
   addBook,
-  deleteBook,
   getBooks,
   getBookCount,
   uiAddBook,
