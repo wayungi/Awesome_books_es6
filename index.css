@@ -15,6 +15,8 @@ html, body, div, h1, h2, p, article, header, nav, section, ul, li {
 }
 
 .list_books_page {
+    display:flex;
+    flex-direction: column;;
     border:3px solid black;
     height:70%;
     width:80%;
@@ -26,33 +28,16 @@ html, body, div, h1, h2, p, article, header, nav, section, ul, li {
 .book_item {
     display:flex;
     flex-direction: row;
-    height:40px;
+    min-height:40px;
     justify-content: space-between;
     box-sizing: border-box;
 }
-
-/* 
-.book-list {
-  border: 3px solid black;
-  margin-bottom: 10px;
-  height: 60vh;
-  overflow-y: scroll;
-}
-
-.book-list div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 2px 5px;
-} */
 
 .book_item:nth-child(odd) {
     background-color: rgba(192,192,192, 0.5);
 }
 
 .book_item p {
-    /* border:1px solid black; */
     margin: 0 5px;
     display: flex;
     align-items: center;
@@ -115,7 +100,6 @@ nav ul li:nth-child(2){
 nav li a {
     text-decoration: none;
     color:black;
-    /* border:1px solid green; */
     padding:8px 15px;
 }
 
@@ -148,7 +132,6 @@ nav ul li a.active{
 }
 
 form {
-    /* border:1px solid black; */
     display:flex;
     flex-direction: column;
     width:50%;
@@ -183,8 +166,6 @@ form input[type='submit']:hover {
     margin: 5% 15%;
 }
 
-
-
 .contact_details {
      margin-top:4%;
      padding-left:4%;
@@ -197,13 +178,8 @@ form input[type='submit']:hover {
 footer {
     position:absolute;
     bottom: 0px;
-    /* 
-    TODO: fix the length of the footer on page resize
-    */
     width:95%;
 }
-
-
 
 .hide {
     display:none;
