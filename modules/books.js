@@ -22,6 +22,18 @@ const deleteBook = (isbn) => {
 
 const getBookCount = () => books.length;
 
+const createBtn = (isbn) => {
+  const btn = document.createElement('button');
+  btn.textContent = 'Remove';
+  btn.setAttribute('id', isbn);
+  btn.classList.add('delete_btn');
+
+  btn.addEventListener('click', (e) => {
+    e.target.parentElement.remove();
+  });
+  return btn;
+};
+
 const uiAddBook = (book) => {
   const bookDiv = document.createElement('div');
   bookDiv.classList.add('book_item');
@@ -49,10 +61,10 @@ const uiAddBook = (book) => {
   return bookDiv;
 };
 
-
 export {
   addBook,
   deleteBook,
   getBooks,
   getBookCount,
+  uiAddBook,
 };
