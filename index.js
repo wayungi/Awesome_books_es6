@@ -5,7 +5,7 @@ import {
   getBooks,
 } from './modules/books.js';
 import Book from './modules/book.js';
-import { uiAddBook } from './modules/ui.js';
+import UiAddBook from './modules/ui.js';
 
 const form = document.getElementById('add_book_form');
 const timeBar = document.getElementById('time_bar');
@@ -65,7 +65,7 @@ form.addEventListener('submit', () => {
   if (title && author) {
     const book = Book(title, author);
     addBook(book);
-    listBooksPage.appendChild(uiAddBook(book));
+    listBooksPage.appendChild(UiAddBook(book));
     document.getElementById('title').value = '';
     document.getElementById('author').value = '';
     return book;
@@ -76,7 +76,7 @@ form.addEventListener('submit', () => {
 document.addEventListener('DOMContentLoaded', () => {
   if (getBookCount()) {
     getBooks().forEach((book) => {
-      listBooksPage.appendChild(uiAddBook(book));
+      listBooksPage.appendChild(UiAddBook(book));
     });
   }
   return null;
