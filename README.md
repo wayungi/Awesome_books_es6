@@ -1,4 +1,5 @@
 # Awesome_books_es6_2
+
 Built with JavaScript, HTML and CSS, Awesome books is a SPA which stores books and their authors. The app has three pages where a user can add book details, view added books, and a contact information page. Added books can also be deleted. 
 
 ## Built With
@@ -46,4 +47,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Awesome books with Es6</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- main navigation menu -->
+        <nav class="nav_bar">
+            <h1>Awesome Books</h1>
+            <ul class="nav_menu">
+                <li class="nav_item"><a href="#"  id="list_id" class="active">List</a></li>
+                <li class="nav_item"><a href="#" id="add_new_id">Add new</a></li>
+                <li class="nav_item"><a href="#" id="contact_id">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- time bar -->
+        <div id="time_bar"></div>
+
+        <!-- display added books -->
+        <div class="list_books_page page" id="list_books"></div>
+
+        <!-- Add book page -->
+        <div class="add_new_book_page page hide" id="add_new_book">
+            <h2 class="page_title">Add a new book</h2>
+            <form action="#" class="form" id="add_book_form">
+                <input type="text" id="title" placeholder="Book Title">
+                <input type="text" id="author" placeholder="Author Name">
+                <input type="submit" value="Add" id="submit_btn">
+            </form>
+        </div>
+
+        <!-- conact information div -->
+        <div class="contact_page page hide" id="contact_us">
+            <h2 class="page_title">Contact information</h2>
+            <p>Do you have any questions or you just want to say "Hello"?</p>
+            <p>You can reach out to us</p>
+            <ul class="contact_details">
+                <li>Our email: <a href="mailto:microverse@gmail.com">microverse@gmail.com</a></li>
+                <li>Our phone number: +256 0495 774 747</li>
+                <li>Our address: Plot 2987, Buziga road</li>
+            </ul>
+        </div>
+
+        <!-- page footer -->
+        <footer>
+            Copyright. All rights reserved.
+        </footer>
+    </div>
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>

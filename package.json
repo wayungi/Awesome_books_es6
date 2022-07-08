@@ -1,0 +1,46 @@
+{
+  "name": "awesome_books_es6_2",
+  "version": "1.0.0",
+  "description": "CRUD application for a book store",
+  "main": "index.js",
+  "scripts": {
+
+  }
+  ,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wayungi/Awesome_books_es6_2.git"
+  }
+  ,
+  "keywords": [
+  "bookstore",
+  "library",
+  "'book",
+  "project'"
+  ],
+  "author": "Francis Wayungi",
+  "license": "ISC",
+  "bugs": {
+
+  }
+  ,
+  "homepage": "https://github.com/wayungi/Awesome_books_es6_2#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0"
+    ,
+    "eslint-config-airbnb-base": "^14.2.1"
+    ,
+    "eslint-plugin-import": "^2.26.0"
+    ,
+    "hint": "^7.0.1"
+    ,
+    "stylelint": "^13.13.1"
+    ,
+    "stylelint-config-standard": "^21.0.0"
+    ,
+    "stylelint-csstree-validator": "^1.9.0"
+    ,
+    "stylelint-scss": "^3.21.0"
+  }
+}
