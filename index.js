@@ -3,9 +3,9 @@ import {
   addBook,
   getBookCount,
   getBooks,
+  uiAddBook,
 } from './modules/books.js';
 import Book from './modules/book.js';
-import { uiAddBook } from './modules/ui.js';
 
 const form = document.getElementById('add_book_form');
 const timeBar = document.getElementById('time_bar');
