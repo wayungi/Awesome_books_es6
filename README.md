@@ -23,7 +23,7 @@ Built with JavaScript, HTML and CSS, Awesome books is a SPA which stores books a
 
 ## Live Demo
 
-[Live Demo Link](https://wayungi.github.io/ToDoListApp/)
+[Live Demo Link](https://wayungi.github.io/Awesome_books_es6_2/)
 
 ## Author
 
