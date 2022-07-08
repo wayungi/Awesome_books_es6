@@ -17,7 +17,7 @@ Built with JavaScript, HTML and CSS, Awesome books is a SPA which stores books a
 
 ### Cloning the repository
 - Create a directory.
-- Open a terminal in this directory and run this command: `git clone git@github.com:wayungi/ToDoListApp.git`.
+- Open a terminal in this directory and run this command: `git clone git@github.com:wayungi/Awesome_books_es6_2.git`.
 - Open the index.html file with a browser application
 - The website will load
 
